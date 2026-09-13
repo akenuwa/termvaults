@@ -111,7 +111,7 @@ TermVault arrives out-of-the-box with pre-configured commands across critical do
 ### 1. Launch via Startup Script
 From your Kali terminal:
 ```bash
-cd /home/otas/Desktop/my_data
+cd /dic/location
 ./start.sh
 ```
 
