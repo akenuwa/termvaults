@@ -117,7 +117,7 @@ cd /home/otas/Desktop/my_data
 
 ### 2. Or Launch via PHP Built-in Server
 ```bash
-php -S 127.0.0.1:8080 -t /home/otas/Desktop/my_data
+php -S 127.0.0.1:8080 -t /dir/location
 ```
 
 Then navigate to **`http://localhost:8080`** in your browser.
@@ -125,7 +125,7 @@ Then navigate to **`http://localhost:8080`** in your browser.
 ### 3. Add a Shell Alias (Optional)
 To launch TermVault from anywhere simply by typing `vault`:
 ```bash
-echo 'alias vault="bash /home/otas/Desktop/my_data/start.sh"' >> ~/.bashrc
+echo 'alias vault="bash /dir/location/start.sh"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
