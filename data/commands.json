@@ -1,0 +1,279 @@
+[
+    {
+        "id": "cmd_6250ee67996e",
+        "title": "Start PHP server in Terminal",
+        "command": "php -S 127.0.0.1:8000 -t .",
+        "category": "CLI & Workflows",
+        "tags": [
+            "php"
+        ],
+        "description": "",
+        "risk_level": "safe",
+        "is_favorite": false,
+        "copy_count": 1,
+        "created_at": "2026-09-13T08:39:57Z",
+        "updated_at": "2026-09-13T08:39:57Z"
+    },
+    {
+        "id": "cmd_86931110a65d",
+        "title": "Start XAMPP Server",
+        "command": "sudo /opt/lampp/lampp start",
+        "category": "CLI & Workflows",
+        "tags": [
+            "XAMPP",
+            "php server"
+        ],
+        "description": "Run with Sudo",
+        "risk_level": "safe",
+        "is_favorite": true,
+        "copy_count": 0,
+        "created_at": "2026-09-13T08:36:10Z",
+        "updated_at": "2026-09-13T08:36:10Z"
+    },
+    {
+        "id": "cmd_antigravity_start",
+        "title": "Start Antigravity (AGY) CLI / IDE",
+        "command": "agy",
+        "category": "CLI & Workflows",
+        "tags": [
+            "antigravity",
+            "agy",
+            "cli",
+            "kali",
+            "startup"
+        ],
+        "description": "Launches the Google Antigravity agentic coding assistant and IDE interface in the Kali Linux terminal.",
+        "risk_level": "safe",
+        "is_favorite": true,
+        "copy_count": 12,
+        "created_at": "2026-09-13T04:00:00Z",
+        "updated_at": "2026-09-13T04:00:00Z"
+    },
+    {
+        "id": "cmd_antigravity_status",
+        "title": "Check Antigravity Status & Version",
+        "command": "agy --version && agy status",
+        "category": "CLI & Workflows",
+        "tags": [
+            "antigravity",
+            "agy",
+            "version",
+            "status"
+        ],
+        "description": "Quickly inspects the installed Antigravity CLI version and active background agent/workspace status.",
+        "risk_level": "safe",
+        "is_favorite": false,
+        "copy_count": 4,
+        "created_at": "2026-09-13T04:01:00Z",
+        "updated_at": "2026-09-13T04:01:00Z"
+    },
+    {
+        "id": "cmd_nmap_full_syn",
+        "title": "Nmap Comprehensive Stealth SYN Scan",
+        "command": "nmap -sS -sV -sC -O -T4 -p- -v <target_ip> -oN scan_results_<target_ip>.txt",
+        "category": "Recon & Scanning",
+        "tags": [
+            "nmap",
+            "recon",
+            "portscan",
+            "network",
+            "kali"
+        ],
+        "description": "Executes a full TCP port scan (1-65535) with service version detection, default NSE scripts, OS fingerprinting, and output saved to a text file.",
+        "risk_level": "notice",
+        "is_favorite": true,
+        "copy_count": 28,
+        "created_at": "2026-09-13T04:02:00Z",
+        "updated_at": "2026-09-13T04:02:00Z"
+    },
+    {
+        "id": "cmd_netcat_listener",
+        "title": "Netcat Reverse Shell Listener",
+        "command": "nc -lvnp <port>",
+        "category": "Exploitation & Shells",
+        "tags": [
+            "netcat",
+            "nc",
+            "reverse-shell",
+            "listener",
+            "pentest"
+        ],
+        "description": "Sets up a local TCP listener to capture incoming reverse shells on the specified port.",
+        "risk_level": "notice",
+        "is_favorite": true,
+        "copy_count": 19,
+        "created_at": "2026-09-13T04:03:00Z",
+        "updated_at": "2026-09-13T04:03:00Z"
+    },
+    {
+        "id": "cmd_ss_listening_ports",
+        "title": "List All Listening Ports & Associated PIDs",
+        "command": "sudo ss -tulnp | grep LISTEN",
+        "category": "Incident Response",
+        "tags": [
+            "ss",
+            "ports",
+            "netstat",
+            "incident-response",
+            "forensics"
+        ],
+        "description": "Displays all active TCP and UDP listening sockets along with process names and PIDs. Essential for detecting rogue listeners.",
+        "risk_level": "safe",
+        "is_favorite": true,
+        "copy_count": 15,
+        "created_at": "2026-09-13T04:04:00Z",
+        "updated_at": "2026-09-13T04:04:00Z"
+    },
+    {
+        "id": "cmd_gobuster_dir",
+        "title": "Gobuster Web Directory Enumeration",
+        "command": "gobuster dir -u <url> -w /usr/share/wordlists/dirb/common.txt -t 30 -x php,html,txt,json",
+        "category": "Web App Security",
+        "tags": [
+            "gobuster",
+            "web",
+            "bruteforce",
+            "enumeration",
+            "directory"
+        ],
+        "description": "Fast multi-threaded directory and file discovery for target web applications including specific file extensions.",
+        "risk_level": "notice",
+        "is_favorite": false,
+        "copy_count": 9,
+        "created_at": "2026-09-13T04:05:00Z",
+        "updated_at": "2026-09-13T04:05:00Z"
+    },
+    {
+        "id": "cmd_find_suid",
+        "title": "Find SUID Binaries (Linux PrivEsc Check)",
+        "command": "find / -perm -4000 -type f -exec ls -la {} 2>/dev/null \\;",
+        "category": "Linux Admin & Hardening",
+        "tags": [
+            "privesc",
+            "suid",
+            "linux",
+            "audit",
+            "permissions"
+        ],
+        "description": "Scans the entire filesystem for executable files with the SUID bit set, helping identify privilege escalation vectors.",
+        "risk_level": "safe",
+        "is_favorite": false,
+        "copy_count": 11,
+        "created_at": "2026-09-13T04:06:00Z",
+        "updated_at": "2026-09-13T04:06:00Z"
+    },
+    {
+        "id": "cmd_tshark_capture",
+        "title": "TShark Live Packet Capture (Filter HTTP/HTTPS)",
+        "command": "sudo tshark -i <interface> -f \"tcp port 80 or tcp port 443\" -w capture_<interface>.pcap",
+        "category": "Network Defense",
+        "tags": [
+            "tshark",
+            "wireshark",
+            "packet-capture",
+            "sniffing",
+            "pcap"
+        ],
+        "description": "CLI packet capture using Wireshark's TShark utility targeting HTTP and HTTPS traffic on a chosen interface.",
+        "risk_level": "notice",
+        "is_favorite": false,
+        "copy_count": 6,
+        "created_at": "2026-09-13T04:07:00Z",
+        "updated_at": "2026-09-13T04:07:00Z"
+    },
+    {
+        "id": "cmd_python_http_server",
+        "title": "Quick Python 3 HTTP Server",
+        "command": "python3 -m http.server <port>",
+        "category": "CLI & Workflows",
+        "tags": [
+            "python",
+            "http",
+            "server",
+            "filetransfer",
+            "utility"
+        ],
+        "description": "Spins up an ad-hoc web server in the current working directory to easily transfer files across local lab systems.",
+        "risk_level": "safe",
+        "is_favorite": true,
+        "copy_count": 22,
+        "created_at": "2026-09-13T04:08:00Z",
+        "updated_at": "2026-09-13T04:08:00Z"
+    },
+    {
+        "id": "cmd_ufw_status_rules",
+        "title": "Inspect UFW Firewall Rules with Index Numbers",
+        "command": "sudo ufw status numbered",
+        "category": "Network Defense",
+        "tags": [
+            "ufw",
+            "firewall",
+            "iptables",
+            "hardening",
+            "defense"
+        ],
+        "description": "Shows current Uncomplicated Firewall state and indexed rule ordering, essential prior to deleting or inserting rules.",
+        "risk_level": "safe",
+        "is_favorite": false,
+        "copy_count": 7,
+        "created_at": "2026-09-13T04:09:00Z",
+        "updated_at": "2026-09-13T04:09:00Z"
+    },
+    {
+        "id": "cmd_auth_log_inspect",
+        "title": "Analyze Failed SSH Login Attempts",
+        "command": "grep \"Failed password\" /var/log/auth.log | awk '{print $(NF-3)}' | sort | uniq -c | sort -nr | head -20",
+        "category": "Incident Response",
+        "tags": [
+            "ssh",
+            "auth-log",
+            "forensics",
+            "bruteforce",
+            "threat-hunting"
+        ],
+        "description": "Parses authentication log for failed SSH authentication attempts, groups by attacking source IP, and outputs the top 20 offenders.",
+        "risk_level": "safe",
+        "is_favorite": true,
+        "copy_count": 14,
+        "created_at": "2026-09-13T04:10:00Z",
+        "updated_at": "2026-09-13T04:10:00Z"
+    },
+    {
+        "id": "term_zero_trust",
+        "title": "Zero Trust Architecture (ZTA) - Core Tenets",
+        "command": "# Concept: Never trust, always verify.\n# 1. All data sources and computing services are resources.\n# 2. All communication is secured regardless of network location.\n# 3. Access is granted on a per-session basis.\n# 4. Access is determined by dynamic policy.",
+        "category": "Terminology & Concepts",
+        "tags": [
+            "zero-trust",
+            "concept",
+            "architecture",
+            "nist-800-207",
+            "framework"
+        ],
+        "description": "NIST SP 800-207 Zero Trust summary: assumes breach and verifies each request as though it originated from an uncontrolled network.",
+        "risk_level": "safe",
+        "is_favorite": false,
+        "copy_count": 5,
+        "created_at": "2026-09-13T04:11:00Z",
+        "updated_at": "2026-09-13T04:11:00Z"
+    },
+    {
+        "id": "term_mitre_attack",
+        "title": "MITRE ATT&CK Framework Tactic IDs",
+        "command": "# TA0043: Reconnaissance\n# TA0001: Initial Access\n# TA0002: Execution\n# TA0003: Persistence\n# TA0004: Privilege Escalation\n# TA0005: Defense Evasion\n# TA0006: Credential Access\n# TA0007: Discovery\n# TA0008: Lateral Movement\n# TA0009: Collection\n# TA0011: Command & Control\n# TA0010: Exfiltration\n# TA0040: Impact",
+        "category": "Terminology & Concepts",
+        "tags": [
+            "mitre",
+            "attack",
+            "tactics",
+            "ttp",
+            "infosec-management"
+        ],
+        "description": "Quick reference for the 14 MITRE ATT&CK enterprise tactics used in threat intelligence reports, detection engineering, and purple teaming.",
+        "risk_level": "safe",
+        "is_favorite": true,
+        "copy_count": 17,
+        "created_at": "2026-09-13T04:12:00Z",
+        "updated_at": "2026-09-13T04:12:00Z"
+    }
+]
